@@ -22,6 +22,7 @@ Table fields:
 - *Name* - is the state name and may not consist spaces.
 - *URL or file name* - is the URL link like *https://darksky.net/forecast/48.1371,11.5754/si24/de* for Munich weather.
 - *RegEx* - regular expression, how to extract data from link. There is a good service to test regula expressions: [regex101](https://regex101.com/). E.g. *temp swip">(-?\d+)˚<* for the lin above.
+- *Num* - is the (number of the match of the RegEx -1). If there are multiple matches the wanted can be selected by changing the value of Num. The first match is 0, the second one 1...
 - *Role* - one of the roles:
     - custom - user defines itself via *admin" the role
     - temperature - the value is temperature
